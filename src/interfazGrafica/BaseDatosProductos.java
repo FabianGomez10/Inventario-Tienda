@@ -1,5 +1,5 @@
 
-package interfazgraficareto3;
+package interfazGrafica;
 
 import java.util.ArrayList;
 import java.util.HashMap;

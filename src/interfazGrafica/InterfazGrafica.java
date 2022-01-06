@@ -1,12 +1,12 @@
 
-package interfazgraficareto3;
+package interfazGrafica;
 import javax.swing.WindowConstants;
 
 /**
  *
  * @author Oscar  Gomez
  */
-public class InterfazGraficaReto3 {
+public class InterfazGrafica {
 
     /**
      * @param args the command line arguments

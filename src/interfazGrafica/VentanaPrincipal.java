@@ -1,4 +1,4 @@
-package interfazgraficareto3;
+package interfazGrafica;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -152,16 +152,16 @@ public class VentanaPrincipal extends JFrame {
 
         // Poner iconos a los botones
         try {
-            URL rutaIcono = VentanaPrincipal.class.getResource("/icono/borrar.png").toURI().toURL();
+            URL rutaIcono = VentanaPrincipal.class.getResource("/iconos/borrar.png").toURI().toURL();
             ImageIcon iconoBorrar = new ImageIcon(rutaIcono);
             botonBorrar.setIcon(iconoBorrar);
-            URL rutaIcono1 = VentanaPrincipal.class.getResource("/icono/report-icon.png").toURI().toURL();
+            URL rutaIcono1 = VentanaPrincipal.class.getResource("/iconos/report-icon.png").toURI().toURL();
             ImageIcon iconoInforme = new ImageIcon(rutaIcono1);
             botonInforme.setIcon(iconoInforme);
-            URL rutaIcono2 = VentanaPrincipal.class.getResource("/icono/add1.png").toURI().toURL();
+            URL rutaIcono2 = VentanaPrincipal.class.getResource("/iconos/add1.png").toURI().toURL();
             ImageIcon iconoAdd = new ImageIcon(rutaIcono2);
             botonAgregar.setIcon(iconoAdd);
-            URL rutaIcono3 = VentanaPrincipal.class.getResource("/icono/up.png").toURI().toURL();
+            URL rutaIcono3 = VentanaPrincipal.class.getResource("/iconos/up.png").toURI().toURL();
             ImageIcon iconoUpdate = new ImageIcon(rutaIcono3);
             botonActualizar.setIcon(iconoUpdate);
         } catch (Exception error) {
@@ -256,7 +256,7 @@ public class VentanaPrincipal extends JFrame {
      * @param str
      */
     private void mostrarInfo(String str) {
-        Icon icono = new ImageIcon(getClass().getResource("/icono/check-1-icon.png"));
+        Icon icono = new ImageIcon(getClass().getResource("/iconos/check-1-icon.png"));
         jop.showMessageDialog(null, str, "Informacion", JOptionPane.PLAIN_MESSAGE, icono);
     }
 

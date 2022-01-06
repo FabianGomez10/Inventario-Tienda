@@ -1,5 +1,5 @@
 
-package interfazgraficareto3;
+package interfazGrafica;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -95,7 +95,7 @@ public class VentanaActualizar extends JDialog {
         
         // Poner iconos a los botones
         try{
-            URL rutaIcono= VentanaActualizar.class.getResource("/icono/up.png").toURI().toURL();
+            URL rutaIcono= VentanaActualizar.class.getResource("/iconos/up.png").toURI().toURL();
             ImageIcon iconoActualizar= new ImageIcon(rutaIcono);
             botonActualizar.setIcon(iconoActualizar);
         }
@@ -236,7 +236,7 @@ public class VentanaActualizar extends JDialog {
                          Double.parseDouble(textoPrecio.getText()), Integer.parseInt(textoInventario.getText()));
                    
                 baseDatosProductos.actualizarDeInterfaz(productoActualizado);
-                Icon icono = new ImageIcon(getClass().getResource("/icono/check-1-icon.png")); 
+                Icon icono = new ImageIcon(getClass().getResource("/iconos/check-1-icon.png")); 
                 JOptionPane.showMessageDialog(null, "¡El producto se actualizo correctamente!","Informacion",JOptionPane.PLAIN_MESSAGE, icono);
                 setVisible(false);
                 refrescarTabla();
